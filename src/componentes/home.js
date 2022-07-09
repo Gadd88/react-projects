@@ -1,15 +1,16 @@
 import React from 'react'
-import "./home.css"
+import classes from "./home.module.css"
+
 
 const home = () => {
   return (
-    <div className='home'>
-        <div className='inner'>
-            <div className='result'>
-                <div className='resbox'></div>
+    <div className={classes.home}>
+        <div className={classes.inner}>
+            <div className={classes.result}>
+                <div className={classes.resbox}></div>
             </div>
-            <div className='btns'>
-                
+            <div className={classes.btns}>
+
             </div>
         </div>
     </div>
