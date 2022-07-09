@@ -2,9 +2,9 @@ import React from 'react'
 import classes from "./button.module.css"
 
 
-function Button({value}){
+function Button({value, handler}){
   return (
-    <div className={value=="C" || value=="=" ? `${classes.calcBtns} ${classes.res}` : `${classes.calcBtns}`}>
+    <div className={value==="C" || value==="=" ? `${classes.calcBtns} ${classes.res}` : `${classes.calcBtns}`} onClick={()=>handler(value)}>
         {value}
     </div>
   )
